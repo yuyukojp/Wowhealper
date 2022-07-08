@@ -1,0 +1,96 @@
+before_script:
+  - rm -rf ./Renosys/output
+  - cd ./Renosys
+  - gem install bundler -v 1.17.3
+  - bundle _1.17.3_ package --all
+  - bundle _1.17.3_ install --local
+  - bundle _1.17.3_ exec pod install
+
+after_script:
+  - echo "---------- after_script start ----------"
+
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+
+stages:
+  - build
+
+build_staging:
+  stage: build
+  when: manual
+  script:
+    - bundle _1.17.3_ exec fastlane build configuration:Staging
+  artifacts:
+    expire_in: 1 week
+    name: "Renosys_staging_${CI_PIPELINE_ID}"
+    paths:
+      - ./Renosys/output/*.ipa
+
+build_staging_adhoc:
+  stage: build
+  when: manual
+  script:
+    - bundle _1.17.3_ exec fastlane build configuration:Staging_adhoc
+  artifacts:
+    expire_in: 1 week
+    name: "Renosys_staging_adhoc_${CI_PIPELINE_ID}"
+    paths:
+      - ./Renosys/output/*.ipa
+
+# uploadToFenrirTestflight:
+#   stage: build
+#   when: manual
+#   script:
+#     - fastlane uploadToTestflight configuration:Develop_adhoc
+#   artifacts:
+#     expire_in: 1 week
+#     name: "PrintDirect_staging_push_${CI_PIPELINE_ID}"
+#     paths:
+#       - ./PrintDirect/output/*.ipa
+build_fenrir_release:
+  stage: build
+  when: manual
+  script:
+    - bundle _1.17.3_ exec fastlane build configuration:FenrirRelease
+  artifacts:
+    expire_in: 1 week
+    name: "Renosys_fenrir_release_${CI_PIPELINE_ID}"
+    paths:
+      - ./Renosys/output/*.ipa
+      - ./Renosys/output/*.zip
+
+build_renosys_release:
+  stage: build
+  when: manual
+  script:
+    - bundle _1.17.3_ exec fastlane build configuration:RenosysRelease
+  artifacts:
+    expire_in: 1 week
+    name: "Renosys_renosys_release_${CI_PIPELINE_ID}"
+    paths:
+      - ./Renosys/output/*.ipa
+      - ./Renosys/output/*.zip
+
+build_release:
+  stage: build
+  when: manual
+  script:
+    - bundle _1.17.3_ exec fastlane build configuration:Release
+  artifacts:
+    expire_in: 1 week
+    name: "Renosys_release_${CI_PIPELINE_ID}"
+    paths:
+      - ./Renosys/output/*.ipa
+      - ./Renosys/output/*.zip
+build_renosys_yoshinoya_staging:
+  stage: build
+  when: manual
+  script:
+    - bundle _1.17.3_ exec fastlane build configuration:YoshinoyaStaging
+  artifacts:
+    expire_in: 1 week
+    name: "Renosys_renosys_release_${CI_PIPELINE_ID}"
+    paths:
+      - ./Renosys/output/*.ipa
+      - ./Renosys/output/*.zip

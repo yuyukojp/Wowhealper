@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B927D7EA50B66D50CE246D88 /* Pods_Wowhealper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F878199AD9DD26366AE3EA21 /* Pods_Wowhealper.framework */; };
+		C1898BBF2877C06100A5E0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BBE2877C06100A5E0E7 /* AppDelegate.swift */; };
+		C1898BC12877C06100A5E0E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BC02877C06100A5E0E7 /* SceneDelegate.swift */; };
+		C1898BC32877C06100A5E0E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BC22877C06100A5E0E7 /* ViewController.swift */; };
+		C1898BC62877C06100A5E0E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1898BC42877C06100A5E0E7 /* Main.storyboard */; };
+		C1898BC82877C06400A5E0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1898BC72877C06400A5E0E7 /* Assets.xcassets */; };
+		C1898BCB2877C06400A5E0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1898BC92877C06400A5E0E7 /* LaunchScreen.storyboard */; };
+		C1898BD62877C06400A5E0E7 /* WowhealperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BD52877C06400A5E0E7 /* WowhealperTests.swift */; };
+		C1898BE02877C06400A5E0E7 /* WowhealperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BDF2877C06400A5E0E7 /* WowhealperUITests.swift */; };
+		C1898BE22877C06400A5E0E7 /* WowhealperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BE12877C06400A5E0E7 /* WowhealperUITestsLaunchTests.swift */; };
+		CA03F85C92B0297DEBC1846C /* Pods_WowhealperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C3FA447917B7F2A8ECFD61 /* Pods_WowhealperTests.framework */; };
+		EBF35B9F8D6EF24F9FFAF83E /* Pods_Wowhealper_WowhealperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E360CE2FC38EF03696EEEEC4 /* Pods_Wowhealper_WowhealperUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1898BD22877C06400A5E0E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1898BB32877C06100A5E0E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1898BBA2877C06100A5E0E7;
+			remoteInfo = Wowhealper;
+		};
+		C1898BDC2877C06400A5E0E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1898BB32877C06100A5E0E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1898BBA2877C06100A5E0E7;
+			remoteInfo = Wowhealper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FD98F1B120CBFD6EA5EA2B /* Pods-Wowhealper-WowhealperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wowhealper-WowhealperUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wowhealper-WowhealperUITests/Pods-Wowhealper-WowhealperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BBE5E1AE5D48DDBEAD79EAA /* Pods-Wowhealper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wowhealper.debug.xcconfig"; path = "Target Support Files/Pods-Wowhealper/Pods-Wowhealper.debug.xcconfig"; sourceTree = "<group>"; };
+		4DCCB625A7348CC18E0F4208 /* Pods-WowhealperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowhealperTests.debug.xcconfig"; path = "Target Support Files/Pods-WowhealperTests/Pods-WowhealperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0C3FA447917B7F2A8ECFD61 /* Pods_WowhealperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowhealperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4029DDAC44BAE10074D1C41 /* Pods-WowhealperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowhealperTests.release.xcconfig"; path = "Target Support Files/Pods-WowhealperTests/Pods-WowhealperTests.release.xcconfig"; sourceTree = "<group>"; };
+		B347607BAB2A1A6B0A4E352E /* Pods-Wowhealper-WowhealperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wowhealper-WowhealperUITests.release.xcconfig"; path = "Target Support Files/Pods-Wowhealper-WowhealperUITests/Pods-Wowhealper-WowhealperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C1898BBB2877C06100A5E0E7 /* Wowhealper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wowhealper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1898BBE2877C06100A5E0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1898BC02877C06100A5E0E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C1898BC22877C06100A5E0E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1898BC52877C06100A5E0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1898BC72877C06400A5E0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1898BCA2877C06400A5E0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1898BCC2877C06400A5E0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1898BD12877C06400A5E0E7 /* WowhealperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowhealperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1898BD52877C06400A5E0E7 /* WowhealperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowhealperTests.swift; sourceTree = "<group>"; };
+		C1898BDB2877C06400A5E0E7 /* WowhealperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowhealperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1898BDF2877C06400A5E0E7 /* WowhealperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowhealperUITests.swift; sourceTree = "<group>"; };
+		C1898BE12877C06400A5E0E7 /* WowhealperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowhealperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E360CE2FC38EF03696EEEEC4 /* Pods_Wowhealper_WowhealperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wowhealper_WowhealperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6ECB6C2A8B979F9D8BC3F07 /* Pods-Wowhealper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wowhealper.release.xcconfig"; path = "Target Support Files/Pods-Wowhealper/Pods-Wowhealper.release.xcconfig"; sourceTree = "<group>"; };
+		F878199AD9DD26366AE3EA21 /* Pods_Wowhealper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wowhealper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1898BB82877C06100A5E0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B927D7EA50B66D50CE246D88 /* Pods_Wowhealper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1898BCE2877C06400A5E0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA03F85C92B0297DEBC1846C /* Pods_WowhealperTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1898BD82877C06400A5E0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF35B9F8D6EF24F9FFAF83E /* Pods_Wowhealper_WowhealperUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A4789721705D1F16CB96267 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE5E1AE5D48DDBEAD79EAA /* Pods-Wowhealper.debug.xcconfig */,
+				F6ECB6C2A8B979F9D8BC3F07 /* Pods-Wowhealper.release.xcconfig */,
+				02FD98F1B120CBFD6EA5EA2B /* Pods-Wowhealper-WowhealperUITests.debug.xcconfig */,
+				B347607BAB2A1A6B0A4E352E /* Pods-Wowhealper-WowhealperUITests.release.xcconfig */,
+				4DCCB625A7348CC18E0F4208 /* Pods-WowhealperTests.debug.xcconfig */,
+				A4029DDAC44BAE10074D1C41 /* Pods-WowhealperTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BD574A53EA3174AA021D042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F878199AD9DD26366AE3EA21 /* Pods_Wowhealper.framework */,
+				E360CE2FC38EF03696EEEEC4 /* Pods_Wowhealper_WowhealperUITests.framework */,
+				A0C3FA447917B7F2A8ECFD61 /* Pods_WowhealperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1898BB22877C06100A5E0E7 = {
+			isa = PBXGroup;
+			children = (
+				C1898BBD2877C06100A5E0E7 /* Wowhealper */,
+				C1898BD42877C06400A5E0E7 /* WowhealperTests */,
+				C1898BDE2877C06400A5E0E7 /* WowhealperUITests */,
+				C1898BBC2877C06100A5E0E7 /* Products */,
+				3A4789721705D1F16CB96267 /* Pods */,
+				5BD574A53EA3174AA021D042 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1898BBC2877C06100A5E0E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1898BBB2877C06100A5E0E7 /* Wowhealper.app */,
+				C1898BD12877C06400A5E0E7 /* WowhealperTests.xctest */,
+				C1898BDB2877C06400A5E0E7 /* WowhealperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1898BBD2877C06100A5E0E7 /* Wowhealper */ = {
+			isa = PBXGroup;
+			children = (
+				C1898BBE2877C06100A5E0E7 /* AppDelegate.swift */,
+				C1898BC02877C06100A5E0E7 /* SceneDelegate.swift */,
+				C1898BC22877C06100A5E0E7 /* ViewController.swift */,
+				C1898BC42877C06100A5E0E7 /* Main.storyboard */,
+				C1898BC72877C06400A5E0E7 /* Assets.xcassets */,
+				C1898BC92877C06400A5E0E7 /* LaunchScreen.storyboard */,
+				C1898BCC2877C06400A5E0E7 /* Info.plist */,
+			);
+			path = Wowhealper;
+			sourceTree = "<group>";
+		};
+		C1898BD42877C06400A5E0E7 /* WowhealperTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1898BD52877C06400A5E0E7 /* WowhealperTests.swift */,
+			);
+			path = WowhealperTests;
+			sourceTree = "<group>";
+		};
+		C1898BDE2877C06400A5E0E7 /* WowhealperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1898BDF2877C06400A5E0E7 /* WowhealperUITests.swift */,
+				C1898BE12877C06400A5E0E7 /* WowhealperUITestsLaunchTests.swift */,
+			);
+			path = WowhealperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1898BBA2877C06100A5E0E7 /* Wowhealper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1898BE52877C06400A5E0E7 /* Build configuration list for PBXNativeTarget "Wowhealper" */;
+			buildPhases = (
+				ECBECE4AE1F0C00483957A1E /* [CP] Check Pods Manifest.lock */,
+				C1898BB72877C06100A5E0E7 /* Sources */,
+				C1898BB82877C06100A5E0E7 /* Frameworks */,
+				C1898BB92877C06100A5E0E7 /* Resources */,
+				D0A35EBA28150421EB1D9208 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wowhealper;
+			productName = Wowhealper;
+			productReference = C1898BBB2877C06100A5E0E7 /* Wowhealper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1898BD02877C06400A5E0E7 /* WowhealperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1898BE82877C06400A5E0E7 /* Build configuration list for PBXNativeTarget "WowhealperTests" */;
+			buildPhases = (
+				15F7F72D990A80600D3E635D /* [CP] Check Pods Manifest.lock */,
+				C1898BCD2877C06400A5E0E7 /* Sources */,
+				C1898BCE2877C06400A5E0E7 /* Frameworks */,
+				C1898BCF2877C06400A5E0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1898BD32877C06400A5E0E7 /* PBXTargetDependency */,
+			);
+			name = WowhealperTests;
+			productName = WowhealperTests;
+			productReference = C1898BD12877C06400A5E0E7 /* WowhealperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1898BDA2877C06400A5E0E7 /* WowhealperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1898BEB2877C06400A5E0E7 /* Build configuration list for PBXNativeTarget "WowhealperUITests" */;
+			buildPhases = (
+				60D7A11B159445A05991585E /* [CP] Check Pods Manifest.lock */,
+				C1898BD72877C06400A5E0E7 /* Sources */,
+				C1898BD82877C06400A5E0E7 /* Frameworks */,
+				C1898BD92877C06400A5E0E7 /* Resources */,
+				645A32582614451B61458CEC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1898BDD2877C06400A5E0E7 /* PBXTargetDependency */,
+			);
+			name = WowhealperUITests;
+			productName = WowhealperUITests;
+			productReference = C1898BDB2877C06400A5E0E7 /* WowhealperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1898BB32877C06100A5E0E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C1898BBA2877C06100A5E0E7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C1898BD02877C06400A5E0E7 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C1898BBA2877C06100A5E0E7;
+					};
+					C1898BDA2877C06400A5E0E7 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C1898BBA2877C06100A5E0E7;
+					};
+				};
+			};
+			buildConfigurationList = C1898BB62877C06100A5E0E7 /* Build configuration list for PBXProject "Wowhealper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1898BB22877C06100A5E0E7;
+			productRefGroup = C1898BBC2877C06100A5E0E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1898BBA2877C06100A5E0E7 /* Wowhealper */,
+				C1898BD02877C06400A5E0E7 /* WowhealperTests */,
+				C1898BDA2877C06400A5E0E7 /* WowhealperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1898BB92877C06100A5E0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1898BCB2877C06400A5E0E7 /* LaunchScreen.storyboard in Resources */,
+				C1898BC82877C06400A5E0E7 /* Assets.xcassets in Resources */,
+				C1898BC62877C06100A5E0E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1898BCF2877C06400A5E0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1898BD92877C06400A5E0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15F7F72D990A80600D3E635D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowhealperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60D7A11B159445A05991585E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wowhealper-WowhealperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		645A32582614451B61458CEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wowhealper-WowhealperUITests/Pods-Wowhealper-WowhealperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wowhealper-WowhealperUITests/Pods-Wowhealper-WowhealperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wowhealper-WowhealperUITests/Pods-Wowhealper-WowhealperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A35EBA28150421EB1D9208 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wowhealper/Pods-Wowhealper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wowhealper/Pods-Wowhealper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wowhealper/Pods-Wowhealper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECBECE4AE1F0C00483957A1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wowhealper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1898BB72877C06100A5E0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1898BC32877C06100A5E0E7 /* ViewController.swift in Sources */,
+				C1898BBF2877C06100A5E0E7 /* AppDelegate.swift in Sources */,
+				C1898BC12877C06100A5E0E7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1898BCD2877C06400A5E0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1898BD62877C06400A5E0E7 /* WowhealperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1898BD72877C06400A5E0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1898BE22877C06400A5E0E7 /* WowhealperUITestsLaunchTests.swift in Sources */,
+				C1898BE02877C06400A5E0E7 /* WowhealperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1898BD32877C06400A5E0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1898BBA2877C06100A5E0E7 /* Wowhealper */;
+			targetProxy = C1898BD22877C06400A5E0E7 /* PBXContainerItemProxy */;
+		};
+		C1898BDD2877C06400A5E0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1898BBA2877C06100A5E0E7 /* Wowhealper */;
+			targetProxy = C1898BDC2877C06400A5E0E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1898BC42877C06100A5E0E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1898BC52877C06100A5E0E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1898BC92877C06400A5E0E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1898BCA2877C06400A5E0E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1898BE32877C06400A5E0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1898BE42877C06400A5E0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1898BE62877C06400A5E0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBE5E1AE5D48DDBEAD79EAA /* Pods-Wowhealper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX4L969549;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wowhealper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wowhealper.Wowhealper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1898BE72877C06400A5E0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6ECB6C2A8B979F9D8BC3F07 /* Pods-Wowhealper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX4L969549;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wowhealper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wowhealper.Wowhealper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1898BE92877C06400A5E0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DCCB625A7348CC18E0F4208 /* Pods-WowhealperTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX4L969549;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wowhealper.WowhealperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wowhealper.app/Wowhealper";
+			};
+			name = Debug;
+		};
+		C1898BEA2877C06400A5E0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4029DDAC44BAE10074D1C41 /* Pods-WowhealperTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX4L969549;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wowhealper.WowhealperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wowhealper.app/Wowhealper";
+			};
+			name = Release;
+		};
+		C1898BEC2877C06400A5E0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FD98F1B120CBFD6EA5EA2B /* Pods-Wowhealper-WowhealperUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX4L969549;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wowhealper.WowhealperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wowhealper;
+			};
+			name = Debug;
+		};
+		C1898BED2877C06400A5E0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B347607BAB2A1A6B0A4E352E /* Pods-Wowhealper-WowhealperUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FX4L969549;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wowhealper.WowhealperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wowhealper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1898BB62877C06100A5E0E7 /* Build configuration list for PBXProject "Wowhealper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1898BE32877C06400A5E0E7 /* Debug */,
+				C1898BE42877C06400A5E0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1898BE52877C06400A5E0E7 /* Build configuration list for PBXNativeTarget "Wowhealper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1898BE62877C06400A5E0E7 /* Debug */,
+				C1898BE72877C06400A5E0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1898BE82877C06400A5E0E7 /* Build configuration list for PBXNativeTarget "WowhealperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1898BE92877C06400A5E0E7 /* Debug */,
+				C1898BEA2877C06400A5E0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1898BEB2877C06400A5E0E7 /* Build configuration list for PBXNativeTarget "WowhealperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1898BEC2877C06400A5E0E7 /* Debug */,
+				C1898BED2877C06400A5E0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1898BB32877C06100A5E0E7 /* Project object */;
+}
