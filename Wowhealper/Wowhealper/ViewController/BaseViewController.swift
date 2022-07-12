@@ -10,15 +10,13 @@ import RealmSwift
 
 class BaseViewController: UIViewController {
     let realm = try! Realm()
-    let backBotton = UIBarButtonItem()
+    var backBotton = UIBarButtonItem()
     let delimiterVeiw: UIView = UIView()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .mainBackgroundColor()
-//        self.navigationController?.navigationBar.delegate = self
-//        self.navigationController?.navigationBar.barTintColor = .blue
     }
     
     func setStoryboard(sbName : String) -> UIStoryboard {
@@ -40,6 +38,10 @@ class BaseViewController: UIViewController {
         } else {
             return 0
         }
+    }
+    
+    @objc func backButtonTapped(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
     }
 
 }

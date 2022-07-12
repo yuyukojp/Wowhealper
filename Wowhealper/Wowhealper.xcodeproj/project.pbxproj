@@ -23,6 +23,8 @@
 		C1898BF728780AC200A5E0E7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BF628780AC200A5E0E7 /* Router.swift */; };
 		C1898BF928780CE500A5E0E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BF828780CE500A5E0E7 /* DetailViewController.swift */; };
 		C1898BFB28780F5100A5E0E7 /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BFA28780F5100A5E0E7 /* ViewController+.swift */; };
+		C1898BFF287D01DE00A5E0E7 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BFE287D01DE00A5E0E7 /* Datas.swift */; };
+		C1898C01287D06C100A5E0E7 /* ImportItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898C00287D06C100A5E0E7 /* ImportItemData.swift */; };
 		CA03F85C92B0297DEBC1846C /* Pods_WowhealperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C3FA447917B7F2A8ECFD61 /* Pods_WowhealperTests.framework */; };
 		EBF35B9F8D6EF24F9FFAF83E /* Pods_Wowhealper_WowhealperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E360CE2FC38EF03696EEEEC4 /* Pods_Wowhealper_WowhealperUITests.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,8 @@
 		C1898BF628780AC200A5E0E7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C1898BF828780CE500A5E0E7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C1898BFA28780F5100A5E0E7 /* ViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
+		C1898BFE287D01DE00A5E0E7 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
+		C1898C00287D06C100A5E0E7 /* ImportItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportItemData.swift; sourceTree = "<group>"; };
 		E360CE2FC38EF03696EEEEC4 /* Pods_Wowhealper_WowhealperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wowhealper_WowhealperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ECB6C2A8B979F9D8BC3F07 /* Pods-Wowhealper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wowhealper.release.xcconfig"; path = "Target Support Files/Pods-Wowhealper/Pods-Wowhealper.release.xcconfig"; sourceTree = "<group>"; };
 		F878199AD9DD26366AE3EA21 /* Pods_Wowhealper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wowhealper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +201,8 @@
 				C1898BF22877C8D900A5E0E7 /* UIColor+.swift */,
 				C1898BF42877C9B000A5E0E7 /* Const.swift */,
 				C1898BFA28780F5100A5E0E7 /* ViewController+.swift */,
+				C1898C00287D06C100A5E0E7 /* ImportItemData.swift */,
+				C1898BFE287D01DE00A5E0E7 /* Datas.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -446,7 +452,9 @@
 				C1898BFB28780F5100A5E0E7 /* ViewController+.swift in Sources */,
 				C1898BF728780AC200A5E0E7 /* Router.swift in Sources */,
 				C1898BC12877C06100A5E0E7 /* SceneDelegate.swift in Sources */,
+				C1898C01287D06C100A5E0E7 /* ImportItemData.swift in Sources */,
 				C1898BF32877C8D900A5E0E7 /* UIColor+.swift in Sources */,
+				C1898BFF287D01DE00A5E0E7 /* Datas.swift in Sources */,
 				C1898BF52877C9B000A5E0E7 /* Const.swift in Sources */,
 				C1898BF928780CE500A5E0E7 /* DetailViewController.swift in Sources */,
 			);

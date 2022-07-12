@@ -12,13 +12,15 @@ class DetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        setupUI()
+
+        setupUI()
     }
     
 
     func setupUI() {
-        navigationController?.navigationBar.tintColor = .red
-        self.navigationController?.navigationBar.topItem?.title = "Detail"
+        navigationItem.backBarButtonItem = backBotton
+        backBotton = UIBarButtonItem(title: "＜返回", style: .done, target: self, action: #selector(backButtonTapped(_:)))
+        navigationItem.setLeftBarButton(backBotton, animated: false)
     }
 
 }
