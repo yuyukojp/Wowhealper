@@ -9,6 +9,7 @@ import RealmSwift
 
 class Cloth: Object {
     @objc dynamic var id = ""
+    @objc dynamic var itemName = ""
     @objc dynamic var itemPosition = ""
     @objc dynamic var maxItemLevel = 0
     @objc dynamic var criticalStrike = 0
@@ -19,6 +20,7 @@ class Cloth: Object {
 
 class Leather: Object {
     @objc dynamic var id = ""
+    @objc dynamic var itemName = ""
     @objc dynamic var itemPosition = ""
     @objc dynamic var maxItemLevel = 0
     @objc dynamic var criticalStrike = 0
@@ -30,6 +32,7 @@ class Leather: Object {
 
 class Mail: Object {
     @objc dynamic var id = ""
+    @objc dynamic var itemName = ""
     @objc dynamic var itemPosition = ""
     @objc dynamic var maxItemLevel = 0
     @objc dynamic var criticalStrike = 0
@@ -40,6 +43,7 @@ class Mail: Object {
 
 class Plate: Object {
     @objc dynamic var id = ""
+    @objc dynamic var itemName = ""
     @objc dynamic var itemPosition = ""
     @objc dynamic var maxItemLevel = 0
     @objc dynamic var criticalStrike = 0
