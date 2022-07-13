@@ -8,18 +8,7 @@
 import RealmSwift
 
 class Cloth: Object {
-    @objc dynamic var id = ""
-    @objc dynamic var itemName = ""
-    @objc dynamic var itemPosition = ""
-    @objc dynamic var maxItemLevel = 0
-    @objc dynamic var criticalStrike = 0
-    @objc dynamic var haste = 0
-    @objc dynamic var mastery = 0
-    @objc dynamic var versatility = 0
-}
-
-class Leather: Object {
-    @objc dynamic var id = ""
+    @objc dynamic var id = 0
     @objc dynamic var itemName = ""
     @objc dynamic var itemPosition = ""
     @objc dynamic var maxItemLevel = 0
@@ -28,10 +17,29 @@ class Leather: Object {
     @objc dynamic var mastery = 0
     @objc dynamic var versatility = 0
     
+    //Primary Keyの設定
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+}
+
+class Leather: Object {
+    @objc dynamic var id = 0
+    @objc dynamic var itemName = ""
+    @objc dynamic var itemPosition = ""
+    @objc dynamic var maxItemLevel = 0
+    @objc dynamic var criticalStrike = 0
+    @objc dynamic var haste = 0
+    @objc dynamic var mastery = 0
+    @objc dynamic var versatility = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 class Mail: Object {
-    @objc dynamic var id = ""
+    @objc dynamic var id = 0
     @objc dynamic var itemName = ""
     @objc dynamic var itemPosition = ""
     @objc dynamic var maxItemLevel = 0
@@ -39,10 +47,14 @@ class Mail: Object {
     @objc dynamic var haste = 0
     @objc dynamic var mastery = 0
     @objc dynamic var versatility = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 class Plate: Object {
-    @objc dynamic var id = ""
+    @objc dynamic var id = 0
     @objc dynamic var itemName = ""
     @objc dynamic var itemPosition = ""
     @objc dynamic var maxItemLevel = 0
@@ -50,6 +62,10 @@ class Plate: Object {
     @objc dynamic var haste = 0
     @objc dynamic var mastery = 0
     @objc dynamic var versatility = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 /*

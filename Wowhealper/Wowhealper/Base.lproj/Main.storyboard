@@ -76,20 +76,94 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pt-sb-5ds">
+                                <rect key="frame" x="274" y="777" width="120" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fZK-3u-DNJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="v9o-6g-uP7"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AddData"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColo">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapAddBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyN-R0-T2e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jc4-KQ-IMj">
+                                <rect key="frame" x="274" y="706" width="120" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7sR-k4-e1Y"/>
+                                    <constraint firstAttribute="width" constant="120" id="NVU-uM-CMe"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="print"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColo">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapPrintbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcA-xd-StD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="etJ-cJ-xMW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="075-s6-pfZ"/>
                             <constraint firstItem="BWd-tl-Wf1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0H4-Vw-rCL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Pt-sb-5ds" secondAttribute="trailing" constant="20" id="ThD-M8-kTZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xZY-zm-icq" secondAttribute="bottom" constant="45" id="UDB-NT-YzC"/>
+                            <constraint firstItem="9Pt-sb-5ds" firstAttribute="centerY" secondItem="xZY-zm-icq" secondAttribute="centerY" id="Ub9-J1-4il"/>
                             <constraint firstItem="xZY-zm-icq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ubl-IQ-aUY"/>
                             <constraint firstItem="etJ-cJ-xMW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="bR7-M4-vnf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jc4-KQ-IMj" secondAttribute="trailing" constant="20" id="ei6-DT-9wS"/>
                             <constraint firstItem="BWd-tl-Wf1" firstAttribute="top" secondItem="etJ-cJ-xMW" secondAttribute="bottom" constant="30" id="rf6-zD-DJP"/>
+                            <constraint firstItem="9Pt-sb-5ds" firstAttribute="top" secondItem="Jc4-KQ-IMj" secondAttribute="bottom" constant="31" id="xk5-y4-g2a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FlC-Hu-Cgu"/>
                     <connections>
+                        <outlet property="addBtn" destination="9Pt-sb-5ds" id="S0a-8q-3ak"/>
+                        <outlet property="printBtn" destination="Jc4-KQ-IMj" id="ICc-Dn-ORo"/>
                         <outlet property="showDetailBtn" destination="xZY-zm-icq" id="Bz7-cW-fId"/>
                     </connections>
                 </viewController>
