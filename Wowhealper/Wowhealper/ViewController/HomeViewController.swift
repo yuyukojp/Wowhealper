@@ -25,13 +25,10 @@ class HomeViewController: BaseViewController {
     }
 
     @IBAction func tapAddBtn(_ sender: Any) {
-        
-//        let searchState = "haste"
-//        let maxValue = realm.objects(Cloth.self).value(forKeyPath: "@max.\(searchState)") as! Int
-//        let maxItemData = realm.objects(Cloth.self).filter("\(searchState) == \(maxValue)")
-        let itemData = realm.objects(Cloth.self).filter("id == \(fundItem(itemType: 0, firstState: "criticalStrike", secoundState: "haste"))")
+
+        let itemData = realm.objects(Cloth.self).filter("id == \(fundItem(itemType: 0, itemPosition: "head", firstState: "criticalStrike", secoundState: "haste"))")
         print(itemData.count)
-        print(itemData)
+        print(itemData.first?.itemName)
     }
     
     @IBAction func tapPrintbtn(_ sender: Any) {
@@ -43,21 +40,89 @@ class HomeViewController: BaseViewController {
         Router.shared.showDetailView(from: self)
     }
     
-    func fundItem(itemType: Int, firstState: String, secoundState: String) -> Int {
+    func fundItem(itemType: Int,itemPosition: String, firstState: String, secoundState: String) -> Int {
         var itemId = -1
-        let haveFirstStateData = realm.objects(Cloth.self).filter("\(firstState) > 0")
-        let haveSecoundStateData = haveFirstStateData.filter("\(secoundState) > 0")
+        print("+++posi:\(itemPosition)")
+        switch itemType {
+        case 0:
+            let predicate = NSPredicate(format: "itemPosition == %@", itemPosition)
+            let currentData = realm.objects(Cloth.self).filter(predicate)
+            print("+++curct:\(currentData.count)")
+            let haveFirstStateData = currentData.filter("\(firstState) > 0")
+            let haveSecoundStateData = haveFirstStateData.filter("\(secoundState) > 0")
 
-        if haveSecoundStateData.count > 0 {
-            let maxFirstStateValue = haveSecoundStateData.value(forKeyPath: "@max.\(firstState)") as! Int
-            let maxItemData = haveSecoundStateData.filter("\(firstState) == \(maxFirstStateValue)")
-            if maxItemData.count > 0 {
-                let secoundStateData = maxItemData.value(forKeyPath: "@max.\(secoundState)") as! Int
-                let secoundItemDate = maxItemData.filter("\(secoundState) == \(secoundStateData)")
-                itemId = secoundItemDate.first?.id ?? -1
+            if haveSecoundStateData.count > 0 {
+                let maxFirstStateValue = haveSecoundStateData.value(forKeyPath: "@max.\(firstState)") as! Int
+                let maxItemData = haveSecoundStateData.filter("\(firstState) == \(maxFirstStateValue)")
+                if maxItemData.count > 0 {
+                    let secoundStateData = maxItemData.value(forKeyPath: "@max.\(secoundState)") as! Int
+                    let secoundItemDate = maxItemData.filter("\(secoundState) == \(secoundStateData)")
+                    itemId = secoundItemDate.first?.id ?? -1
+                } else {
+                    itemId = maxItemData.first?.id ?? -1
+                }
             } else {
-                itemId = maxItemData.first?.id ?? -1
+                itemId = haveFirstStateData.first?.id ?? -1
             }
+        case 1:
+            let predicate = NSPredicate(format: "itemPosition == %@", itemPosition)
+            let currentData = realm.objects(Leather.self).filter(predicate)
+            let haveFirstStateData = currentData.filter("\(firstState) > 0")
+            let haveSecoundStateData = haveFirstStateData.filter("\(secoundState) > 0")
+
+            if haveSecoundStateData.count > 0 {
+                let maxFirstStateValue = haveSecoundStateData.value(forKeyPath: "@max.\(firstState)") as! Int
+                let maxItemData = haveSecoundStateData.filter("\(firstState) == \(maxFirstStateValue)")
+                if maxItemData.count > 0 {
+                    let secoundStateData = maxItemData.value(forKeyPath: "@max.\(secoundState)") as! Int
+                    let secoundItemDate = maxItemData.filter("\(secoundState) == \(secoundStateData)")
+                    itemId = secoundItemDate.first?.id ?? -1
+                } else {
+                    itemId = maxItemData.first?.id ?? -1
+                }
+            } else {
+                itemId = haveFirstStateData.first?.id ?? -1
+            }
+        case 2:
+            let predicate = NSPredicate(format: "itemPosition == %@", itemPosition)
+            let currentData = realm.objects(Mail.self).filter(predicate)
+            let haveFirstStateData = currentData.filter("\(firstState) > 0")
+            let haveSecoundStateData = haveFirstStateData.filter("\(secoundState) > 0")
+
+            if haveSecoundStateData.count > 0 {
+                let maxFirstStateValue = haveSecoundStateData.value(forKeyPath: "@max.\(firstState)") as! Int
+                let maxItemData = haveSecoundStateData.filter("\(firstState) == \(maxFirstStateValue)")
+                if maxItemData.count > 0 {
+                    let secoundStateData = maxItemData.value(forKeyPath: "@max.\(secoundState)") as! Int
+                    let secoundItemDate = maxItemData.filter("\(secoundState) == \(secoundStateData)")
+                    itemId = secoundItemDate.first?.id ?? -1
+                } else {
+                    itemId = maxItemData.first?.id ?? -1
+                }
+            } else {
+                itemId = haveFirstStateData.first?.id ?? -1
+            }
+        case 3:
+            let predicate = NSPredicate(format: "itemPosition == %@", itemPosition)
+            let currentData = realm.objects(Plate.self).filter(predicate)
+            let haveFirstStateData = currentData.filter("\(firstState) > 0")
+            let haveSecoundStateData = haveFirstStateData.filter("\(secoundState) > 0")
+
+            if haveSecoundStateData.count > 0 {
+                let maxFirstStateValue = haveSecoundStateData.value(forKeyPath: "@max.\(firstState)") as! Int
+                let maxItemData = haveSecoundStateData.filter("\(firstState) == \(maxFirstStateValue)")
+                if maxItemData.count > 0 {
+                    let secoundStateData = maxItemData.value(forKeyPath: "@max.\(secoundState)") as! Int
+                    let secoundItemDate = maxItemData.filter("\(secoundState) == \(secoundStateData)")
+                    itemId = secoundItemDate.first?.id ?? -1
+                } else {
+                    itemId = maxItemData.first?.id ?? -1
+                }
+            } else {
+                itemId = haveFirstStateData.first?.id ?? -1
+            }
+        default:
+            break
         }
         
         return itemId

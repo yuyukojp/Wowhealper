@@ -22,7 +22,7 @@ final class Router {
     }
     
     func showDetailView(from: UIViewController) {
-        let DetailVC = DetailViewController()
+        let DetailVC = CharacterDetailViewController()
         from.show(to: DetailVC)
     }
 //    

@@ -16,7 +16,15 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .mainBackgroundColor()
+        self.view.backgroundColor = .white//.mainBackgroundColor()
+        self.navigationController?.navigationBar.tintColor = .ngaTextColor()
+
+        let appearance = UINavigationBarAppearance()
+                appearance.configureWithOpaqueBackground()
+                appearance.backgroundColor = .ngaBGColor()
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
+
     }
     
     func setStoryboard(sbName : String) -> UIStoryboard {

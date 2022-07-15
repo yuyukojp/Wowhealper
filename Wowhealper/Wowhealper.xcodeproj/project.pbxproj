@@ -21,10 +21,11 @@
 		C1898BF32877C8D900A5E0E7 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BF22877C8D900A5E0E7 /* UIColor+.swift */; };
 		C1898BF52877C9B000A5E0E7 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BF42877C9B000A5E0E7 /* Const.swift */; };
 		C1898BF728780AC200A5E0E7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BF628780AC200A5E0E7 /* Router.swift */; };
-		C1898BF928780CE500A5E0E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BF828780CE500A5E0E7 /* DetailViewController.swift */; };
 		C1898BFB28780F5100A5E0E7 /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BFA28780F5100A5E0E7 /* ViewController+.swift */; };
 		C1898BFF287D01DE00A5E0E7 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898BFE287D01DE00A5E0E7 /* Datas.swift */; };
 		C1898C01287D06C100A5E0E7 /* ImportItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898C00287D06C100A5E0E7 /* ImportItemData.swift */; };
+		C1898C04287EB03800A5E0E7 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898C02287EB03700A5E0E7 /* CharacterDetailViewController.swift */; };
+		C1898C05287EB03800A5E0E7 /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1898C03287EB03800A5E0E7 /* CharacterDetailViewController.xib */; };
 		CA03F85C92B0297DEBC1846C /* Pods_WowhealperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C3FA447917B7F2A8ECFD61 /* Pods_WowhealperTests.framework */; };
 		EBF35B9F8D6EF24F9FFAF83E /* Pods_Wowhealper_WowhealperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E360CE2FC38EF03696EEEEC4 /* Pods_Wowhealper_WowhealperUITests.framework */; };
 /* End PBXBuildFile section */
@@ -70,10 +71,11 @@
 		C1898BF22877C8D900A5E0E7 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		C1898BF42877C9B000A5E0E7 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		C1898BF628780AC200A5E0E7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		C1898BF828780CE500A5E0E7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C1898BFA28780F5100A5E0E7 /* ViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
 		C1898BFE287D01DE00A5E0E7 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
 		C1898C00287D06C100A5E0E7 /* ImportItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportItemData.swift; sourceTree = "<group>"; };
+		C1898C02287EB03700A5E0E7 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		C1898C03287EB03800A5E0E7 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		E360CE2FC38EF03696EEEEC4 /* Pods_Wowhealper_WowhealperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wowhealper_WowhealperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ECB6C2A8B979F9D8BC3F07 /* Pods-Wowhealper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wowhealper.release.xcconfig"; path = "Target Support Files/Pods-Wowhealper/Pods-Wowhealper.release.xcconfig"; sourceTree = "<group>"; };
 		F878199AD9DD26366AE3EA21 /* Pods_Wowhealper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wowhealper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				C1898BC22877C06100A5E0E7 /* HomeViewController.swift */,
-				C1898BF828780CE500A5E0E7 /* DetailViewController.swift */,
+				C1898C06287EB04000A5E0E7 /* CharacterDetail */,
 				C1898BEF2877C73800A5E0E7 /* BaseViewController.swift */,
 			);
 			path = ViewController;
@@ -205,6 +207,15 @@
 				C1898BFE287D01DE00A5E0E7 /* Datas.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C1898C06287EB04000A5E0E7 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C1898C02287EB03700A5E0E7 /* CharacterDetailViewController.swift */,
+				C1898C03287EB03800A5E0E7 /* CharacterDetailViewController.xib */,
+			);
+			path = CharacterDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 				C1898BCB2877C06400A5E0E7 /* LaunchScreen.storyboard in Resources */,
 				C1898BC82877C06400A5E0E7 /* Assets.xcassets in Resources */,
 				C1898BC62877C06100A5E0E7 /* Main.storyboard in Resources */,
+				C1898C05287EB03800A5E0E7 /* CharacterDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1898BC32877C06100A5E0E7 /* HomeViewController.swift in Sources */,
+				C1898C04287EB03800A5E0E7 /* CharacterDetailViewController.swift in Sources */,
 				C1898BF02877C73800A5E0E7 /* BaseViewController.swift in Sources */,
 				C1898BBF2877C06100A5E0E7 /* AppDelegate.swift in Sources */,
 				C1898BFB28780F5100A5E0E7 /* ViewController+.swift in Sources */,
@@ -456,7 +469,6 @@
 				C1898BF32877C8D900A5E0E7 /* UIColor+.swift in Sources */,
 				C1898BFF287D01DE00A5E0E7 /* Datas.swift in Sources */,
 				C1898BF52877C9B000A5E0E7 /* Const.swift in Sources */,
-				C1898BF928780CE500A5E0E7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

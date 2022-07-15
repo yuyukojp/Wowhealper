@@ -84,4 +84,18 @@ extension UIColor{
                        blue: 227 / 255.0,
                        alpha: 1)
     }
+    
+    public static func ngaTextColor() -> UIColor {
+        return UIColor(red: 70 / 255.0,
+                       green: 17 / 255.0,
+                       blue: 6 / 255.0,
+                       alpha: 1)
+    }
+    
+    public static func ngaBGColor() -> UIColor {
+        return UIColor(red: 255 / 255.0,
+                       green: 237 / 255.0,
+                       blue: 194 / 255.0,
+                       alpha: 1)
+    }
 }
